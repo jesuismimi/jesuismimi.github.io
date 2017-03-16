@@ -64,11 +64,11 @@
         
         
         function randomJoke() {
-            $.getJSON("/jokes.json", function(json) {
+/*            $.getJSON("/jokes.json", function(json) {
                 var joke = jokes[Math.floor(Math.random() * jokes.length)]
             $('#joke').html(joke)
-            });
-/*            var jokes = [
+            });*/
+            var jokes = [
                 "Quelle est la spécialité glacée des allemands ? ... Le BananaShoahSplit",
                 "J\'ai laché un e-i-prout !",
                 "Mon esto-emacs attend de se remplir le buffer.",
@@ -78,7 +78,7 @@
             ]
                 
             var joke = jokes[Math.floor(Math.random() * jokes.length)]
-            $('#joke').html(joke)*/
+            $('#joke').html(joke)
         }
         
         $(function() {
